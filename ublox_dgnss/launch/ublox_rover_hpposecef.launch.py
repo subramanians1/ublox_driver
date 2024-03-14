@@ -10,7 +10,9 @@ def generate_launch_description():
             {'CFG_RATE_MEAS': 100},
             {'CFG_RATE_NAV': 1},
             {'CFG_MSGOUT_UBX_NAV_HPPOSECEF_USB': 1},
-            {'CFG_MSGOUT_UBX_NAV_STATUS_USB': 5},
+            {'CFG_MSGOUT_UBX_NAV_STATUS_USB': 5}, 
+            {'CFG_MSGOUT_UBX_NAV_PVT_USB': 5},
+            
             {'CFG_MSGOUT_UBX_RXM_RTCM_USB': 1}
             ]
 

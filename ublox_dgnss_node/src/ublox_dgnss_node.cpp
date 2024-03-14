@@ -168,8 +168,9 @@ public:
       }
     }
 
-    auto qos = rclcpp::SensorDataQoS();
-
+    //auto qos = rclcpp::SensorDataQoS();
+    auto qos = rclcpp::QoS(rclcpp::SystemDefaultsQoS());
+    
     ubx_nav_clock_pub_ = this->create_publisher<ublox_ubx_msgs::msg::UBXNavClock>(
       "ubx_nav_clock",
       qos);
